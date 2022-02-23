@@ -1,0 +1,18 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+      product: 作品
+    attributes:
+      user:
+        name: 名前
+        address: 住所
+        phone: 電話番号
+        sex: 性別
+        mail_address: メールアドレス
+      products:
+        form:
+          name: 作品名
+          price: 価格
+          stock: 数量
+          note:　備考
