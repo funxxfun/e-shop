@@ -17,3 +17,9 @@ module EShop
     # the framework and any gems in your application.
   end
 end
+
+module I18nApp
+  class Application < Rails::Application
+    config.i18n.default_locale = :ja # 追加
+  end
+end
