@@ -67,3 +67,6 @@ gem 'devise'
 gem 'payjp'
 gem "rails-i18n"
 gem 'devise-i18n'
+gem 'mini_magick', '~> 4.8'
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+gem "refile-mini_magick"
