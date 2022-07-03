@@ -1,5 +1,5 @@
 <%= form_with(model: @contact, url: contacts_path, local: true) do |f| %>
-  <h5 class='form-header-text'>お問い合わせフォーム</h5>
+  <h5>お問い合わせフォーム</h5>
   <% if @contact.errors.any? %>
     <div class="alert alert-danger" role="alert">
       <strong>入力内容にエラーがあります</strong>
@@ -12,14 +12,14 @@
   <% end %>
   <div class="form-group">
     <%= f.label "お名前" %>
-    <%= f.text_field :name, placeholder: "お名前", class: "input-form" %>
+    <%= f.text_field :name, placeholder: "お名前", lass: "form-control" %>
   </div>
   <div class="form-group">
     <%= f.label "お問合せ内容" %>
-    <%= f.text_area :content, placeholder: "お問合せ内容を入力してください", class: "input-form" %>
+    <%= f.text_area :content, placeholder: "お問合せ内容を入力してください", lass: "form-control" %>
   </div>
   <div class="register-btn">
-    <%= f.submit '送信' %>
+    <%= f.submit '送信', class: 'btn btn-primary' %>
       <!--<i class="fas fa-paper-plane"></i>-->
   </div>
   <div class="register-btn">
